@@ -107,10 +107,6 @@ $(document).ready(function() {
     $("#fechaini").datepicker({
         numberOfMonths: 1,
         allowInputToggle: true,
-        showButtonPanel: true,
-        showOn: "button",
-        buttonImage: "images/calendar.gif",
-		buttonImageOnly: true,
 		buttonText: "Select date",
         showAnim: "fade",
         minDate: 0,
@@ -121,10 +117,6 @@ $(document).ready(function() {
      $("#fechafin").datepicker({
         numberOfMonths: 1,
         showButtonPanel: true,
-        showOn: "button",
-        buttonImage: "images/calendar.gif",
-		buttonImageOnly: true,
-		buttonText: "Select date",
         showAnim: "fade",
         minDate: 0,
         addClass:"negrito"
