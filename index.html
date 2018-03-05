@@ -10,6 +10,8 @@
       
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">    
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -25,11 +27,11 @@
     </head>
     <body>
 <!-- Cabecera-->
-    
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center">
-             <a href="#">
-             <img src="images/logo.png" width="250px" height="100px"></a>
-        </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center">
+         <a href="#">
+         <img src="images/logo.png" width="250px" height="100px"></a>
+    </nav>
+        
         
 <!--Inicio y presentación-->
         <div class="container-fluid" id="Presentacion">
@@ -68,7 +70,7 @@
         </div>
         <div class="form-group row">
             <div class="col-sm-4 col-2"></div>
-            <div class="col-sm-2 col-3">
+            <div class="col-sm-2 col-3 negrito">
                         <div id="dialogo1" title="Precio 7 días">
                         <p>Habitación simple: 350€</p>
                         <p>Habitación doble: 550€</p>
@@ -76,13 +78,13 @@
                     </div>
                         <button id="abrir">Precio 7 días</button>
                     </div>
-            <div class="col-sm-2 col-5">
+            <div class="col-sm-2 col-5 azulito">
                 <div id="dialogo2" title="Precio 15 días">
                         <p>Habitación simple: 700€</p>
                         <p>Habitación doble: 900€</p>
                         <p>Para más precios consultar</p>
                     </div>
-                        <button id="abrir2">Precio  15 días</button>
+                        <button id="abrir2">Precio 15 días</button>
                     </div>
                 </div>
     <div id="rellena">
@@ -102,69 +104,69 @@
             <form>
                 <div class="form-group row">
                     <div class="col-sm-6">
-                        <label for="Nombre">Nombre</label>
+                        <label for="Nombre"><span class="dashicons dashicons-admin-users"><i class="fa fa-male fa-lg"></i></span>Nombre</label>
                         <input type="text" class="form-control" id="inputFirstname" placeholder="Nombre">
                     </div>
                     <div class="col-sm-6">
-                        <label for="inputLastname">Apellidos</label>
+                        <label for="inputLastname"><i class="fa fa-vcard-o"></i>Apellidos</label>
                         <input type="text" class="form-control" id="inputLastname" placeholder="Apellidos">
                     </div>
                 </div>
                 <div class="form-group row">
                     <div class="col-sm-6">
-                        <label for="inputAddressLine1">Dirección</label>
+                        <label for="inputAddressLine1"><i class="fa fa-home"></i>Dirección</label>
                         <input type="text" class="form-control" id="inputAddressLine1" placeholder="Dirección">
                     </div>
                     <div class="col-sm-6">
-                        <label for="inputAddressLine2">Dirección 2 (Línea 2)</label>
+                        <label for="inputAddressLine2"><i class="fa fa-hotel"></i>Dirección 2 (Línea 2)</label>
                         <input type="text" class="form-control" id="inputAddressLine2" placeholder="Completa dirección">
                     </div>
                 </div>
                 <div class="form-group row">
                     
                     <div id="citybox" class="control-group col-sm-6">
-						<label for="zip">Municipio</label>
+						<label for="zip"><i class="fa fa-tree"></i>Municipio</label>
 						<input name="city" id="city" class="ui-autocomplete-input form-control" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true" type="text" placeholder="Municipio">
                     </div>
                     <div class="col-sm-6">
-                        <label for="myText">Ciudad</label>
+                        <label for="myText"><i class="fa fa-university"></i>Ciudad</label>
                          <input id="myText" class="form-control" placeholder="Ciudad"/>
                     </div>
                 </div>
                 <div class="form-group row">
                     <div id="statebox" class="control-group col-sm-6">
-                        <label for="zip">Comunidad autónoma</label>
+                        <label for="zip"><i class="fa fa-black-tie"></i>Comunidad autónoma</label>
                         <input name="state" id="state" class="ui-autocomplete-input form-control" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true" type="text" placeholder="Comunidad Autónoma">
                     </div>
                     <div id="zipbox" class="control-group success col-sm-6">
-                        <label for="zip">Código postal</label>
+                        <label for="zip"><i class="fa fa-fort-awesome"></i>Código postal</label>
                         <input class="form-control" pattern="[0-9]*" name="zip" id="zip" placeholder="Escriba su código postal aquí" type="text">
                     </div>
                 </div>                
                 <div class="form-group row">
                     <div class="col-sm-6 col-12">
-                        <label for="inputContactNumber">Teléfono de contacto</label>
+                        <label for="inputContactNumber"><i class="fa fa-volume-control-phone"></i>Teléfono de contacto</label>
                         <input type="number" class="form-control" id="inputContactNumber" placeholder="Teléfono de contacto">
                     </div>
                     <div class="col-sm-6 col-12">
-                        <label for="inputWebsite">Dirección de correo electrónico</label>
+                        <label for="inputWebsite"><i class="fa fa-at"></i>Dirección de correo electrónico</label>
                         <input type="text" class="form-control" id="inputWebsite" placeholder="Introduce tu dirección de correo">
                     </div>
                 </div>
 <!--Calendario-->
                 <div class="form-group row">
-                    <div class="col-lg-3 col-sm-4 col-12 calendario">
-                        <label for="fechaentrada">Fecha prevista de entrada</label>
+                    <div class="col-lg-3 col-sm-4 col-12 calendario negrito">
+                        <label for="fechaentrada"><i class="fa fa-calendar" .hidden-xs></i>Fecha de entrada</label>
                         <input type="text" id="fechaini" value="" placeholder="Fecha prevista entrada"/>
                     </div>
-                    <div class="col-lg-3 col-sm-4 col-12 calendario">
-                        <label for="fechasalida">Fecha prevista de salida</label>
+                    <div class="col-lg-3 col-sm-4 col-12 calendario negrito">
+                        <label for="fechasalida"><i class="fa fa-calendar"></i>Fecha de salida</label>
                         <input type="text" id="fechafin" value="" placeholder="Fecha prevista salida"/>
                     </div>
 <!--Desplegable-->
                     <div class="form-group col-sm-6 col-12">
-                        <label for="desplegable">Número de personas que desean acudir</label>
-                        <select class="custom-select form-control" required>
+                        <label for="desplegable"><i class="fa fa-users"></i>Número de personas que desean acudir</label>
+                        <select class="custom-select form-control despliega" required>
                           <option value="1">1</option>
                           <option value="2">2</option>
                           <option value="3">3</option>
@@ -224,9 +226,10 @@
     </div>        
 
         
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback"></script>
 <script type="text/javascript" src="js/script.js"></script>

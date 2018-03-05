@@ -1,3 +1,4 @@
+/*Normas generales del cuerpo de la página*/
 html, body{
   height: 100%;
 }
@@ -35,38 +36,36 @@ footer{
     background-color: rgba(255, 255, 255, 0.49);
     font-weight: bold;
 }
-/*div principal del datepicker*/
+/*Datepicker*/
+
+
+
 .ui-datepicker
 {
 background: black;
 }
 
-/*Tabla con los días del mes*/
 .ui-datepicker table
 {
 font-size: 12px;
 }
 
-/*La cabecera*/
 .ui-datepicker .ui-datepicker-header
 {
 font-size: 12px;
 background: #FFFFFF;
 }
 
-/*Para los días de la semana: Sa Mo ... */
 .ui-datepicker th
 {
 color: #FFFFFF;
 }
 
-/*Para items con los días del mes por defecto */
 .ui-datepicker .ui-state-default
 {
 background: #FFFFFF;
 }
 
-/*Para el item del día del mes seleccionado */
 .ui-datepicker .ui-state-active
 {
 background: orange;
@@ -127,7 +126,9 @@ font-family: 'Roboto', sans-serif;
   margin-left: 75px;
   font-size: 16px;
 }
-
+.formulario input,.despliega{
+    background-color: rgb(224, 224, 173);
+}
 /*Personalización de los botones*/
 
 .guardar {
@@ -220,7 +221,7 @@ font-family: 'Roboto', sans-serif;
   animation: ripple 1s ease-out;
 }
 
-/*Efectos*/
+/*Efectos
 /*Hide y show*/
 .mydiv{
     margin:10px;

@@ -1,13 +1,14 @@
 //Punto 1 :Temas
 $(document).ready(function(){
+     $("#fechaini").addClass("azulito");
 	$("#abrir").click(function(){
-        $("body").addClass("negrito");
-        $("body").removeClass("azulito");
+//        $("body").addClass("negrito");
+//        $("#fechaini").addClass("azulito");
 		
 	});
     $("#abrir2").click(function(){
-        $("body").removeClass("negrito");
-		$("body").addClass("azulito");
+//        $("body").removeClass("negrito");
+//		$("body").addClass("azulito");
 	});
 });
 
@@ -102,10 +103,10 @@ $(function () {
 $(document).ready(function() {
     var startDate;
     var endDate;
-
     
     $("#fechaini").datepicker({
         numberOfMonths: 1,
+        allowInputToggle: true,
         showButtonPanel: true,
         showOn: "button",
         buttonImage: "images/calendar.gif",
@@ -113,6 +114,8 @@ $(document).ready(function() {
 		buttonText: "Select date",
         showAnim: "fade",
         minDate: 0,
+        addClass:"negrito",
+        
     });
     
      $("#fechafin").datepicker({
@@ -124,6 +127,7 @@ $(document).ready(function() {
 		buttonText: "Select date",
         showAnim: "fade",
         minDate: 0,
+        addClass:"negrito"
     })
     
     $('#fechaini').change(function() {
@@ -192,7 +196,7 @@ function Boton() {
 $(document).ready(function() {
 
             $("#show").click(function () {
-               $(".mydiv").show("bounce", {times:3}, 1000  );
+               $(".mydiv").show("bounce", {times:3}, 1000 );
             });
 
             $("#hide").click(function () {
