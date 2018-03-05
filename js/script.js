@@ -106,11 +106,10 @@ $(document).ready(function() {
     
     $("#fechaini").datepicker({
         numberOfMonths: 1,
-        allowInputToggle: true,
-		buttonText: "Select date",
+        showButtonPanel: true,
         showAnim: "fade",
         minDate: 0,
-        addClass:"negrito",
+        addClass:"negrito"
         
     });
     
