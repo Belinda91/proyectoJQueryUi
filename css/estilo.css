@@ -1,0 +1,243 @@
+html, body{
+  height: 100%;
+}
+body { 
+			background-image: url(../images/index.png) ;
+			background-position: center center;
+			background-repeat:  no-repeat;
+			background-attachment: fixed;
+			background-size:  cover;
+}
+footer{
+    color: black;
+    background: #bde5fc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size 1em;
+    text-align: center;
+    width: 100%;
+}
+
+#presentacion{
+    text-align: center;
+    border:2px solid black;
+    font-weight: bold;
+}
+
+#habitacion{
+    border: 2px solid black;
+    width: auto;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#rellena{
+    
+    background-color: rgba(255, 255, 255, 0.49);
+    font-weight: bold;
+}
+/*div principal del datepicker*/
+.ui-datepicker
+{
+background: black;
+}
+
+/*Tabla con los días del mes*/
+.ui-datepicker table
+{
+font-size: 12px;
+}
+
+/*La cabecera*/
+.ui-datepicker .ui-datepicker-header
+{
+font-size: 12px;
+background: #FFFFFF;
+}
+
+/*Para los días de la semana: Sa Mo ... */
+.ui-datepicker th
+{
+color: #FFFFFF;
+}
+
+/*Para items con los días del mes por defecto */
+.ui-datepicker .ui-state-default
+{
+background: #FFFFFF;
+}
+
+/*Para el item del día del mes seleccionado */
+.ui-datepicker .ui-state-active
+{
+background: orange;
+color: #FFFFFF;
+}
+
+.calendario img{
+    float:left;
+    margin-right: 5px;
+    margin-top:8px;
+}
+
+
+
+/*Documentación para captcha*/
+.ca {
+background-color: white;
+  height: 100px;
+  width: 300px;
+  border-radius: 10px;
+  border: #A8A8A8 solid 1px;
+  margin-left:20px;
+}
+.check {
+  margin-left: 120px;
+  margin-top: 20px;
+  border: #A8A8A8 solid 2.6px;  
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  box-shadow: 3px 0px 20px -2px rgba(0,0,0,0.27);
+  cursor: pointer; 
+}
+.circle {
+  width: 20px;  
+  height: 20px;
+  z-index: 5;
+  border-radius: 360px;
+  border: solid gray 10px;
+  margin-top:3px;
+  margin-left: 2px;
+  border-top: solid 10px #5d4fff;
+  animation: spinMe 1s linear infinite;
+  display: none;  
+}
+
+.checkmark {
+ width: 25px;
+  height: 25px;
+  display: none;
+}
+
+.rt {
+font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: #4C4A4B;
+  margin-top: 5px;
+  margin-left: 75px;
+  font-size: 16px;
+}
+
+/*Personalización de los botones*/
+
+.guardar {
+     border: none;
+     background: #00a9ff;
+     font-size: 18px;
+     border-radius: 5px;
+     position: relative;
+     box-sizing: border-box;
+     transition: all 500ms ease;
+}
+.guardar:before {
+     content:'';
+     position: absolute;
+     top: 0px;
+     left: 0px;
+     width: 0px;
+     height: 42px;
+     background: rgba(255,255,255,0.3);
+     border-radius: 5px;
+     transition: all 1s ease;
+}
+
+.guardar:hover:before {
+    width: 100%;
+}
+
+.cambiar{
+    border:none;
+    background: #ffb100;
+    font-size: 18px;
+    margin-bottom:10px;
+}
+
+.cambiar:hover {
+ background: rgba(0,0,0,0);
+ color: #3a7999;
+ box-shadow: inset 0 0 0 3px #3a7999;
+}
+
+.borrar {
+     border: none;
+      cursor: pointer;
+      color: white;
+      border-radius: 5px;
+      font-size: 18px;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+      background: red;
+     margin-bottom: 10px;
+}
+
+.borrar:hover{
+    background: rgb(227, 134, 134);
+}
+.borrar{
+    position: relative;
+    overflow: hidden;
+}
+
+.borrar:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background: rgba(255, 255, 255, .5);
+  opacity: 0;
+  border-radius: 100%;
+  transform: scale(1, 1) translate(-50%);
+  transform-origin: 50% 50%;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0, 0);
+    opacity: 1;
+  }
+  20% {
+    transform: scale(25, 25);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(40, 40);
+  }
+}
+
+.borrar:focus:not(:active)::after {
+  animation: ripple 1s ease-out;
+}
+
+/*Efectos*/
+/*Hide y show*/
+.mydiv{
+    margin:10px;
+    padding:12px; 
+    border:2px solid #666; 
+    display: none;
+    background-color: rgba(255, 255, 255, .8);
+}
+
+.hide{
+    margin-bottom: 10px;
+}
+
+.show{
+    margin-bottom: 10px;
+}
+
+#abrir, #abrir2{
+    margin-top:30px;
+}

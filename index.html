@@ -1,0 +1,247 @@
+<html>
+    <head>
+	<meta charset="UTF-8">
+	
+	<title>Práctica Tema 4 Belinda Núñez Lozano</title>
+        
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">    
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" title="Practica Tema 4" />
+    
+
+    
+    <link rel="stylesheet" type="text/css" href="css/negrito/jquery-ui.structure.css"/>
+    <link rel="stylesheet" type="text/css" href="css/negrito/jquery-ui.theme.css"/>
+    <link rel="stylesheet" type="text/css" href="css/azulito/jquery-ui.structure.css"/>
+    <link rel="stylesheet" type="text/css" href="css/azulito/jquery-ui.theme.css"/>
+        
+    </head>
+    <body>
+<!-- Cabecera-->
+    
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center">
+             <a href="#">
+             <img src="images/logo.png" width="250px" height="100px"></a>
+        </nav>
+        
+<!--Inicio y presentación-->
+        <div class="container-fluid" id="Presentacion">
+        <div class="row no-gutters">
+              <div class="col-12"><div id="carta">
+                  <h1>¿Qué es rent room?</h1>
+                  </div></div>
+            </div>
+            <div class="row no-gutters">
+              <div class="col-12 col-md-4 col-lg-4" id="habitacion"><div>
+                                <div class="card-body">
+                                <h5 class="card-title">Te recogemos en el aeropuerto</h5>
+                                <p class="card-text">Un chofer irá a por ti y tu familia para llevarte a tu apartamento</p>
+                              </div>
+                            <img class="card-img-top arreglo" src="images/imagen1.jpg">
+                  </div>
+            </div>
+               <div class="col-12 col-md-4 col-lg-4" id="habitacion"><div>
+                                <div class="card-body">
+                                <h5 class="card-title">Te llevamos al apartamento que has reservado</h5>
+                                <p class="card-text">Evitamos así pérdidas y posibles confusiones</p>
+                              </div>
+                            <img class="card-img-top" src="images/imagen2.jpg">
+            
+                            </div>
+                        </div>
+            <div class="col-12 col-md-4 col-lg-4" id="habitacion"><div>
+                                <div class="card-body">
+                                <h5 class="card-title">Elige el pago que más cómodo te resulte</h5>
+                                <p class="card-text">Tu comodidad es nuestra principal preocupación en cualquiera de nuestras estacias</p>
+                              </div>
+                            <img class="card-img-top" src="images/imagen3.png">
+                  </div>
+            </div>
+        </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-4 col-2"></div>
+            <div class="col-sm-2 col-3">
+                        <div id="dialogo1" title="Precio 7 días">
+                        <p>Habitación simple: 350€</p>
+                        <p>Habitación doble: 550€</p>
+                        <p>Para más precios consultar</p>
+                    </div>
+                        <button id="abrir">Precio 7 días</button>
+                    </div>
+            <div class="col-sm-2 col-5">
+                <div id="dialogo2" title="Precio 15 días">
+                        <p>Habitación simple: 700€</p>
+                        <p>Habitación doble: 900€</p>
+                        <p>Para más precios consultar</p>
+                    </div>
+                        <button id="abrir2">Precio  15 días</button>
+                    </div>
+                </div>
+    <div id="rellena">
+         <div class="container-fluid" id="Presentacion">
+             <div class="row no-gutters">
+              <div class="col-12"><div id="carta">
+                  <h1>¿Te interesa? Contacta con nosotros sin compromiso</h1>
+                  </div></div>
+            </div>
+        </div>
+        
+<!--Formulario-->
+        
+        <div class="container py-5">
+    <div class="row">
+        <div class="col-md-10 mx-auto formulario">
+            <form>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="Nombre">Nombre</label>
+                        <input type="text" class="form-control" id="inputFirstname" placeholder="Nombre">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="inputLastname">Apellidos</label>
+                        <input type="text" class="form-control" id="inputLastname" placeholder="Apellidos">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <label for="inputAddressLine1">Dirección</label>
+                        <input type="text" class="form-control" id="inputAddressLine1" placeholder="Dirección">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="inputAddressLine2">Dirección 2 (Línea 2)</label>
+                        <input type="text" class="form-control" id="inputAddressLine2" placeholder="Completa dirección">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    
+                    <div id="citybox" class="control-group col-sm-6">
+						<label for="zip">Municipio</label>
+						<input name="city" id="city" class="ui-autocomplete-input form-control" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true" type="text" placeholder="Municipio">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="myText">Ciudad</label>
+                         <input id="myText" class="form-control" placeholder="Ciudad"/>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div id="statebox" class="control-group col-sm-6">
+                        <label for="zip">Comunidad autónoma</label>
+                        <input name="state" id="state" class="ui-autocomplete-input form-control" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true" type="text" placeholder="Comunidad Autónoma">
+                    </div>
+                    <div id="zipbox" class="control-group success col-sm-6">
+                        <label for="zip">Código postal</label>
+                        <input class="form-control" pattern="[0-9]*" name="zip" id="zip" placeholder="Escriba su código postal aquí" type="text">
+                    </div>
+                </div>                
+                <div class="form-group row">
+                    <div class="col-sm-6 col-12">
+                        <label for="inputContactNumber">Teléfono de contacto</label>
+                        <input type="number" class="form-control" id="inputContactNumber" placeholder="Teléfono de contacto">
+                    </div>
+                    <div class="col-sm-6 col-12">
+                        <label for="inputWebsite">Dirección de correo electrónico</label>
+                        <input type="text" class="form-control" id="inputWebsite" placeholder="Introduce tu dirección de correo">
+                    </div>
+                </div>
+<!--Calendario-->
+                <div class="form-group row">
+                    <div class="col-lg-3 col-sm-4 col-12 calendario">
+                        <label for="fechaentrada">Fecha prevista de entrada</label>
+                        <input type="text" id="fechaini" value="" placeholder="Fecha prevista entrada"/>
+                    </div>
+                    <div class="col-lg-3 col-sm-4 col-12 calendario">
+                        <label for="fechasalida">Fecha prevista de salida</label>
+                        <input type="text" id="fechafin" value="" placeholder="Fecha prevista salida"/>
+                    </div>
+<!--Desplegable-->
+                    <div class="form-group col-sm-6 col-12">
+                        <label for="desplegable">Número de personas que desean acudir</label>
+                        <select class="custom-select form-control" required>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="+4">+4</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-4 justify-content-center col-12">
+                         <div class="ca form-group form-control">
+                          <div class="check" onClick="startoffFunctions()">
+                            <div class="circle" id="circle">
+                              </div>
+                             <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/907508/transparent-green-checkmark-hi.png" class="checkmark" id="checkmark" draggable="false">
+                            </div>
+                          <p class="rt">No soy un robot</p>
+                          </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-3 col-1">
+                    </div>
+                    <div class="col-sm-3 col-7">
+                        <button type="reset" class="btn btn-primary waves-effect px-4 float-right borrar" onclick="Boton()">Limpiar formulario</button>
+                    </div>
+                    <div class="col-sm-2 col-4">
+                        <button type="submit" class="btn btn-primary px-4 float-right guardar mask waves-effect waves-light" >Guardar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+        <!--Normas de alquiler-->
+    <div class="container-fluid" id="Presentacion">
+         <div class="row no-gutters">
+          <div class="col-12"><div>
+              <h3>Si quieres, puedes leer las normas de uso de nuestras instalaciones aquí</h3>
+              </div></div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-12 mydiv">
+                Debes ser mayor de edad, no tener antecedentes penales en ningún país (se comprobará), tener en posesión más de la cantidad mínima requerida para tu alojamiento en nuestras instalaciones. Si durante la estancia se sufre algún desperfecto (por rotura por parte del cliente), se procederá al abono del coste en el momento de desalojo de las instalaciones. En cambio, si se rompe algún electrodoméstico se encargará la empresa de arreglarlo.
+            </div>
+            <div class="col-3 col-md-5"></div>
+            <div class="col-3 col-lg-1 hide">
+                 <input id = "hide" type = "button" value = "Ocultar" class="btn btn-primary" />  
+            </div>
+            <div class="col-3 col-lg-1 show">
+                <input id = "show" type = "button" value = "Mostrar" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>        
+
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body> 
+
+    <footer>
+        <div class="footer">
+            &copy; 2018 Belinda Núñez Lozano
+        <ul class="nav justify-content-center">
+            <li class="nav-item"><a href="" class="nav-link pl-0"><i class="fa fa-facebook fa-lg"></i></a></li>
+            <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-twitter fa-lg"></i></a></li>
+            <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-github fa-lg"></i></a></li>
+            <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-instagram fa-lg"></i></a></li>
+        </ul>
+        </div>
+    </footer> 
+
+</html>
