@@ -4,12 +4,12 @@ Realizado por Belinda Núñez Lozano
 # Enlace al live
 https://belinda91.github.io/proyectoJQueryUi/
 
-# Módulos utilizados
-Bootstrap
-JQuery UI
-JQuery
-Libreria Font-awesome
-Recaptcha de Google
+# Módulos utilizados:
+# Bootstrap
+# JQuery UI
+# JQuery
+# Libreria Font-awesome
+# Recaptcha de Google
 
 # Para poder visualizar correctamente el autocomplete tanto en ciudades como en código postal hay que desactivar la seguridad, en Chrome se hace al escribir un código postal darle a cargar scripts no seguros y en Mozilla dandole al candado verde y desactivando la seguridad
 
